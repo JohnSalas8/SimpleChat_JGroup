@@ -8,6 +8,8 @@ import java.io.*;
 import java.util.List; 
 import java.util.LinkedList;
 
+// java SimpleChat -Djgroups.bind_addr=IP java.net.preferIPv4Stack=true
+
 public class SimpleChat extends ReceiverAdapter {
     JChannel channel;
     String user_name=System.getProperty("user.name", "n/a");
@@ -48,7 +50,7 @@ public class SimpleChat extends ReceiverAdapter {
     private void start() throws Exception {
         channel=new JChannel();
         channel.setReceiver(this);
-        channel.connect("ChatCluster");
+        channel.connect("TALI");
         channel.getState(null, 10000);
         eventLoop();
         channel.close();
