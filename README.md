@@ -6,7 +6,7 @@ Descargar la version 3 de JGroups descomprimir el .jar y agregar lo que este den
 > javac SimpleChat.java
 
 
-> java -Djgroups.bind_addr=IP_MULTICAST -Djava.net.preferIPv4Stack=true
+> java SimpleChat -Djgroups.bind_addr=IP_MULTICAST -Djava.net.preferIPv4Stack=true
 
 
 Hay que cambiar en la linea 53 del código:
