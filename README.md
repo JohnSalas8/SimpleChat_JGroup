@@ -7,3 +7,10 @@ Descargar la version 3 de JGroups descomprimir el .jar y agregar lo que este den
 
 
 > java -Djgroups.bind_addr=IP_MULTICAST -Djava.net.preferIPv4Stack=true
+
+
+Hay que cambiar en la linea 53 del código:
+
+	channel.connect("TALI");
+
+"TALI" es el nombre del canal al cual se va conectar. Pueden cambiarselo pero los que se vayan a conectar al mismo canal deben tener ese nombre.
