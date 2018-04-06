@@ -5,4 +5,6 @@ Descargar la version 3 de JGroups descomprimir el .jar y agregar lo que este den
 mismo nivel que el archivo .java del archivo SimpleChat.
 
 > javac SimpleChat.java
+
+
 > java SimpleChat
