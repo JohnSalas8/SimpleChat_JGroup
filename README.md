@@ -23,3 +23,7 @@ Hay que cambiar en la linea 53 del código:
 ## 4. Ejecutar SimpleChat.java
 
 > java SimpleChat -Djgroups.bind_addr=IP_MULTICAST -Djava.net.preferIPv4Stack=true
+
+### NOTA:
+
+### Donde las IPs Multicast van de la 224.0.0.1 a la 239.255.255.255
